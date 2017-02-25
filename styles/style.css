@@ -116,6 +116,7 @@ div.panel {
     padding: 0 18px;
     background-color: #ffcc99;
     display: none;
+    color:black;
 }
 
 div.footer {
@@ -126,3 +127,6 @@ div.footer {
   transform: translate(-50%, -50%)
 }
 
+div.title {
+    
+}
