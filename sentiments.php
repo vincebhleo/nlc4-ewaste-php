@@ -47,7 +47,7 @@
                         type: "pie",
                         showInLegend: true,
                         toolTipContent: "{name}: <strong>{y}%</strong>",
-                        indexLabel: "{name} {y}%",
+                        indexLabel: "{name} {y}",
                         dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
                     }
                     ]
