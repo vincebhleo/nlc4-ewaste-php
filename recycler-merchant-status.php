@@ -88,7 +88,7 @@ if ($result->num_rows > 0) {
 ?>
                 <div class="results-row">
                     <div class="col"><?php echo $row['company']; ?></div>
-                    <div class="col"><?php echo number_format($row['sum_weight'] / 50, 2, '.', ''); ?></div>
+                    <div class="col"><?php echo number_format($row['sum_weight'] , 2, '.', ''); ?></div>
                     <div class="col"><?php echo number_format($row['percent_full'], 2, '.', ''); ?></div>
                     <div class="col">
                     <?php if ($row['status'] == 'available') {
