@@ -17,16 +17,23 @@
 
     <?php
 		// Change here
+		$unixTime = time();
         $dataPoints = array(
-            array("y" => 3, "label" => "Today"),
+            array("y" => 3, "label" => "Today")/*,
             array("y" => 1, "label" => "25-Feb-2017"),
             array("y" => 2, "label" => "24-Feb-2017"),
             array("y" => 1, "label" => "23-Feb-2017"),
             array("y" => 2, "label" => "22-Feb-2017"),
             array("y" => 3, "label" => "21-Feb-2017"),
             array("y" => 4, "label" => "20-Feb-2017"),
-            array("y" => 0, "label" => "19-Feb-2017")
+            array("y" => 0, "label" => "19-Feb-2017")*/
         );
+		$limit = 8;
+		$dayInSeconds = 24 * 60 * 60;
+		for($i = 1; $i < $limit, $i++) {
+			$date = date("d-M-Y", $unixTime - ($i * $unixTime));
+			array_push($dataPoints, array("y" => rand(1, 8), "x" => $date));
+		}
     ?>
 
     <body>
