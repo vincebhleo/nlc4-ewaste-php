@@ -28,12 +28,14 @@
             array("y" => 4, "label" => "20-Feb-2017"),
             array("y" => 0, "label" => "19-Feb-2017")*/
         );
+		/*
 		$limit = 8;
 		$dayInSeconds = 24 * 60 * 60;
 		for($i = 1; $i < $limit, $i++) {
 			$date = date("d-M-Y", $unixTime - ($i * $dayInSeconds));
 			array_push($dataPoints, array("y" => rand(1, 8), "x" => $date));
 		}
+		*/
     ?>
 
     <body>
