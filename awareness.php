@@ -31,7 +31,7 @@
 		$limit = 8;
 		$dayInSeconds = 24 * 60 * 60;
 		for($i = 1; $i < $limit, $i++) {
-			$date = date("d-M-Y", $unixTime - ($i * $unixTime));
+			$date = date("d-M-Y", $unixTime - ($i * $dayInSeconds));
 			array_push($dataPoints, array("y" => rand(1, 8), "x" => $date));
 		}
     ?>
