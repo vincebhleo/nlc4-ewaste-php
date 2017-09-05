@@ -16,6 +16,7 @@
     </head>
 
     <?php
+		// Change here
         $dataPoints = array(
             array("y" => 3, "label" => "Today"),
             array("y" => 1, "label" => "25-Feb-2017"),
